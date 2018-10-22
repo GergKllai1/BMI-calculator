@@ -2,18 +2,21 @@ const { expect } = require('chai');
 const BrowserHelpers = require('e2e_training_wheels')
 const browser = new BrowserHelpers()
 
-describe('User can calculate BMI'() =>{
+describe('User can calculate BMI',() =>{
     before(async () => {
         await browser.init()
         await browser.visitPage('http://localhost:8080/')
     });
     beforeEach(async () => {
+        await browser.page.reload();
+    });
+    after(async () => {
         await browser.close();
     });
     
-    interface('by inputing his weight and heigth' async () => {
+    it('by inputing his weight and heigth', async () => {
         await browser.fillIn("input[id='weight-in-kgs']", {with: '95' })
-        await browser.fillIn("input[id='height-in-cm']" { with: '185'})
+        await browser.fillIn("input[id='height-in-cm']" ,{ with: '185'})
 
         await browser.clickOnButton("button")
         let content = await browser.getContent("span[id='display_value']")
