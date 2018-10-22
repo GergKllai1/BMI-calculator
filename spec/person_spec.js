@@ -18,5 +18,5 @@ describe("Person", () => {
     it("should have a BMI Message", ()=>{
         person.calculate_bmi();
         expect(person.bmiMessage).to.equal("Overweight");
-    });
-})
+    })
+});
