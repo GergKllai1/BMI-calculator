@@ -8,7 +8,7 @@ describe("Person", () => {
     it('should have weight of 90',() => {
         expect(person.weight).to.equal(90);
     });
-    i5("should have height of 186", () => {
+    it("should have height of 186", () => {
         expect(person.height).to.equal(186);
     });
 })
