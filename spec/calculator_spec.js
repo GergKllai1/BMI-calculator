@@ -12,7 +12,7 @@ describe('BMICalculator', function(){
         calculator.metric_bmi(person);
         expect(person.bmiValue).to.equal(26.01);
     });
-    it('sets BMI message for person using metric method' () => {
+    it("sets BMI message for person using metric method", function(){
         calculator.metric_bmi(person);
         expect(person.bmiMessage).to.equal('Overweight');
     });
