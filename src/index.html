@@ -22,10 +22,22 @@
                 <span id="display_value"></span>
                 <span id="display_message"></span>
             </div>
-            
+
     <script type="text/javascript">
        const global = {}
-
+       
+       const calculateBMI = () => {
+            return new Promise (resolve => {
+                let w = parseFloat(document.getElementById('weight-in-kgs').value);
+                let h = parseFloat(document.getElementById('height-in-cm').value);
+                let person = new Person ({
+                    weight: w,
+                    height: h,
+                });
+                person.calculate_bmi();
+                resolve(person);
+            })
+        };
         global.calculateForm = document.querySelector('#calculate');
         global.displayValueElement = document.querySelector('#display_value');
         global.displayMesseageElement = document.querySelector('#display_message');
@@ -40,18 +52,7 @@
                 })
             })
         });
-        const calculateBMI = () => {
-            return new Promise (resolve => {
-                let w = parseFloat(document.getElementById('weight-in-kgs').value);
-                let w = parseFloat(document.getElementById('height-in-cm').value);
-                let person = new Person ({
-                    weight: w,
-                    height: h,
-                });
-                person.calculate_bmi();
-                resolve(person);
-            })
-        };
+        
         </script>
         
    

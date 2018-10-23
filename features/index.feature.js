@@ -14,7 +14,7 @@ describe('User can calculate BMI',() =>{
         await browser.close();
     });
     
-    it('by inputing his weight and heigth', async () => {
+    it('by inputing his weight and height', async () => {
         await browser.fillIn("input[id='weight-in-kgs']", {with: '95' })
         await browser.fillIn("input[id='height-in-cm']" ,{ with: '185'})
 
