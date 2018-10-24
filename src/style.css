@@ -1,0 +1,36 @@
+h1 {
+    font-size: 48px;   
+}
+body{
+    background-color: oldlace;
+    text-align: center;
+    font-family: fantasy;
+    background-image:
+}
+form, div{
+    text-align: center;
+    padding:15px;
+}
+input{
+    width: 120px;
+    height: 30px;
+    font-size: 18px;
+    text-align: center
+}
+button{
+    width: 120px;
+    height: 30px;
+    font-size: 18px;
+}
+    
+#display_value, #display_message{
+    text-emphasis: bold;
+    font-size: 30px
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 250px;
+}
