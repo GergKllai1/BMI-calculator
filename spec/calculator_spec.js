@@ -17,4 +17,12 @@ describe('BMICalculator', function() {
         calculator.metric_bmi(person);
         expect(person.bmiMessage).to.equal('Overweight');
     });
+    it("calculates BMI for a person using imperial method", function(){
+        calculator.imperial_bmi(person);
+        expect(person.bmiValue).to.equal(1.83);
+    });
+    it("sets BMI message for person using imperial method", function(){
+        calculator.imperial_bmi(person);
+        expect(person.bmiMessage).to.equal('Underweight');
+    });
 })

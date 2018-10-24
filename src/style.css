@@ -5,10 +5,8 @@ body{
     background-color: oldlace;
     text-align: center;
     font-family: fantasy;
-    background-image:
 }
 form, div{
-    text-align: center;
     padding:15px;
 }
 input{
@@ -28,9 +26,6 @@ button{
     font-size: 30px
 }
 img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 500px;
     height: 250px;
 }
